@@ -49,7 +49,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4 xl:mr-12">
+          <div className="w-60 max-w-full px-4 mr-14 sm:ml-0 xl:mr-12">
   <Link
     href="/"
     className={`header-logo block w-full ${
@@ -59,19 +59,20 @@ const Header = () => {
     <Image
       src="/images/logo/logo.png"
       alt="logo"
-      width={70} // تعيين العرض المطلوب
-      height={27} // تعيين الارتفاع المطلوب
-      className="w-50 dark:hidden object-contain" // استخدام object-contain للحفاظ على النسب
+      width={70} 
+      height={27} 
+      className="w-50 dark:hidden object-contain" 
     />
     <Image
       src="/images/logo/logo512.png"
       alt="logo"
-      width={70} // تعيين العرض المطلوب
-      height={27} // تعيين الارتفاع المطلوب
-      className="hidden w-50 dark:block object-contain" // استخدام object-contain للحفاظ على النسب
+      width={70} 
+      height={27} 
+      className="hidden w-50 dark:block object-contain" 
     />
   </Link>
-</div> 
+</div>
+
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button

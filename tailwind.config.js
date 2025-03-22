@@ -31,7 +31,14 @@ module.exports = {
       "2xl": "1400px",
       // => @media (min-width: 1400px) { ... }
     },
-    extend: {
+ 
+      extend: {
+        fontFamily: {
+          cairo: ["Cairo", "sans-serif"],
+          tajawal: ["Tajawal", "sans-serif"],
+          amiri: ["Amiri", "serif"],
+          tharwat: ["Tharwat", "serif"],
+        },
       colors: {
         current: "currentColor",
         transparent: "transparent",
@@ -68,5 +75,61 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+   plugins: [
+    function ({ addBase }) {
+      addBase({
+        "@font-face": [
+          {
+            fontFamily: "Cairo",
+            fontStyle: "normal",
+            fontWeight: "400",
+            fontDisplay: "swap",
+            src: `url("/fonts/Cairo-Regular.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Cairo",
+            fontStyle: "normal",
+            fontWeight: "700",
+            fontDisplay: "swap",
+            src: `url("/fonts/Cairo-Bold.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Tajawal",
+            fontStyle: "normal",
+            fontWeight: "400",
+            fontDisplay: "swap",
+            src: `url("/fonts/Tajawal-Regular.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Tajawal",
+            fontStyle: "normal",
+            fontWeight: "700",
+            fontDisplay: "swap",
+            src: `url("/fonts/Tajawal-Bold.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Amiri",
+            fontStyle: "normal",
+            fontWeight: "400",
+            fontDisplay: "swap",
+            src: `url("/fonts/Amiri-Regular.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Amiri",
+            fontStyle: "normal",
+            fontWeight: "700",
+            fontDisplay: "swap",
+            src: `url("/fonts/Amiri-Bold.woff2") format("woff2")`,
+          },
+          {
+            fontFamily: "Tharwat",
+            fontStyle: "normal",
+            fontWeight: "400",
+            fontDisplay: "swap",
+            src: `url("/fonts/TharwatOmaraa.woff2") format("woff2")`,
+          },
+        ],
+      });
+    },
+  ],
 };

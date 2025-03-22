@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: 'http',
         hostname: 'localhost', // السماح بالصور من localhost
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn-icons-png.flaticon.com',
+      },
     ],
   },
 };

@@ -9,9 +9,9 @@ const Blog = () => {
       className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <SectionTitle
-          title="Our Latest Blogs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+      <SectionTitle
+          title="أحدث أحكام محكمة النقض"
+          paragraph="نستعرض هنا أحدث الأحكام الصادرة عن محكمة النقض المصرية في مختلف القضايا."
           center
         />
 

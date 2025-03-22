@@ -3,45 +3,46 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "تأييد حكم السجن في قضية الابتزاز الإلكتروني",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+      "محكمة النقض تؤيد حكم السجن لمدة 10 سنوات لمتهم قام بابتزاز ضحية وهدد بنشر صورها الخاصة، في سابقة قضائية تعزز الحماية الإلكترونية.",
+    image: "/images/legal/cybercrime-case.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "أحمد كمال",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "خبير قانوني",
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["جرائم إلكترونية", "ابتزاز"],
+    publishDate: "مارس 2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "حكم نهائي بشأن ملكية العقارات المنزوعة للمنفعة العامة",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
+      "أصدرت محكمة النقض حكمًا بإلزام الجهة الحكومية بدفع التعويض المناسب لأصحاب العقارات المنزوعة ملكيتها للمنفعة العامة.",
+    image: "/images/legal/property-case.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "محمد عبد الرحمن",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "محامي مختص",
     },
-    tags: ["computer"],
-    publishDate: "2025",
+    tags: ["القانون العقاري", "تعويضات"],
+    publishDate: "فبراير 2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "إلغاء حكم ضد شركة تأمين في قضية تعويضات مرورية",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "محكمة النقض تلغي حكمًا سابقًا ضد شركة تأمين، مؤكدة أن التعويض يجب أن يكون وفقًا للعقد الموقع بين الأطراف وليس بناءً على التقديرات العشوائية.",
+    image: "/images/legal/insurance-case.jpeg",
     author: {
-      name: "Lethium Deo",
+      name: "ياسر منصور",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "مستشار قانوني",
     },
-    tags: ["design"],
-    publishDate: "2025",
+    tags: ["التأمين", "حوادث المرور"],
+    publishDate: "يناير 2025",
   },
 ];
+
 export default blogData;
